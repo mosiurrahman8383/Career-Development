@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Development — HTML + Tailwind (No JavaScript)</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="page01.html">
+  <style>
+    /* Minimal custom CSS for CSS-only behavior */
+    .video-panel {
+      display: none
+    }
+
+    .video-panel:target {
+      display: block
+    }
+
+    .glass {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, .04)
+    }
+
+    .glow {
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, .06), 0 10px 30px rgba(0, 0, 0, .35), inset 0 0 40px rgba(56, 189, 248, .06)
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-slate-950/70 border-b border-white/10 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="text-cyan-400">
+          <path d="M12 2l3.5 6.5L22 9l-5 4.9L18 22l-6-3.2L6 22l1-8.1L2 9l6.5-.5L12 2z" stroke="currentColor"
+            stroke-width="1.2" />
+        </svg>
+        <a href="website.html" rel="noopener noreferrer">
+          <h1 class="text-xl font-bold tracking-wide">Career <span class="text-cyan-400">Development</span></h1>
+        </a>
+      </div>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-300">
+        <a class="hover:text-white" href="website.html #courses">Courses</a>
+        <a class="hover:text-white" href="#learning-path">30‑Day Path</a>
+        <a class="hover:text-white" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 opacity-40" aria-hidden="true">
+      <div class="absolute -top-24 -right-24 h-72 w-72 bg-cyan-500/30 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-24 h-72 w-72 bg-fuchsia-500/20 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 py-16 sm:py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight">PLC Automation</h2>
+          <p class="mt-4 text-slate-300 max-w-xl">
+            Gain hands-on expertise in <span class="font-semibold">PLC automation</span> to streamline industrial
+            processes, reduce costs, and drive smarter, more efficient business operations.
+          </p>
+
+          <div class="mt-6 flex gap-3">
+            <a href="#learning-path"
+              class="px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold z-10">Start
+              Learning</a>
+            <a href="#learning-path"
+              class="px-5 py-3 rounded-xl border border-white/10 hover:border-white/20 font-semibold z-10">Browse
+              Courses</a>
+          </div>
+        </div>
+        <div class="glass glow rounded-2xl p-6 border border-white/10">
+          <div class="aspect-video rounded-xl bg-slate-800/60 border border-white/10 grid place-items-center">
+            <span class="text-slate-300"><img class="rounded-xl" src="images/PLC Automation.jpg" alt=""></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="learning-path" class="max-w-6xl mx-auto px-4 py-12">
+    <h3 class="text-2xl sm:text-3xl font-bold">30‑Day <span class="text-cyan-400">Learning Path</span> PLC Automation</h3>
+    <p class="text-slate-300 mt-2">Click <span class="font-semibold">Watch</span>. The video opens inside that lesson.
+      Uses CSS <code>:target</code>, so only the targeted panel is visible.</p>
+
+    <div class="mt-8 flex flex-col gap-5">
+      <!-- Template for 30 days: duplicate and change numbers + YouTube IDs -->
+
+      <!-- Day 1 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              1</div>
+            <div>
+              <h5 class="font-semibold">✅DAY – 1 পিএলসি কি? এর অ্যাপ্লিকেশন এবং সুবিধাগুলো কি কি? পিএলসি কিভাবে ডাটা প্রসেস করে?</h5>
+              <p class="text-slate-300 text-sm mt-1">Introduction to Embedded Systems, IoT & Controllers</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  1</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-1"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-1" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 2 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              2</div>
+            <div>
+              <h5 class="font-semibold">✅Day 2: Basic Programming Conditions:</h5>
+              <p class="text-slate-300 text-sm mt-1">Variables,Data types,Operators,If..Else,Switch,Loop,Break/
+                Continue,Arrays,Strings</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 18 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  2</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-2"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-2" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0&modestbranding=1" title="Day 2"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 3 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              3</div>
+            <div>
+              <h5 class="font-semibold">✅Day-3: Embedded C Programming</h5>
+              <p class="text-slate-300 text-sm mt-1">Embedded C Programming</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 22 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  3</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-3"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-3" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/XIrBHuJAWSs" title="Day 3"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+
+
+      <!--  Day 4 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              4</div>
+            <div>
+              <h5 class="font-semibold">✅Day 4: led blinking with arduino and Working process of lcd</h5>
+              <p class="text-slate-300 text-sm mt-1">led blinking with arduino and Working process of lcd</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400"><span>⏱ 19 min</span><span
+                  class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day 4</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0"><a href="#v-4"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a></div>
+        </div>
+        <div id="v-4" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/LjXPxa1hSRM" title="Day 4"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 5 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              5</div>
+            <div>
+              <h5 class="font-semibold">✅Day-5: Air quality monitoring system</h5>
+              <p class="text-slate-300 text-sm mt-1">Air quality monitoring system</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  5</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-5"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-5" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 5"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+
+      <!-- Day 6 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              6</div>
+            <div>
+              <h5 class="font-semibold">✅Day-6: Smart Door lock System</h5>
+              <p class="text-slate-300 text-sm mt-1">Smart Door lock System</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  6</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-6"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-6" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 6"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 7 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              7</div>
+            <div>
+              <h5 class="font-semibold">✅Day 7: Developing Smart Electric Meter using GSM & Arduino
+                Node MCU, ESP32 , Blynk app & Thingspeak cloud platform</h5>
+              <p class="text-slate-300 text-sm mt-1">Developing Smart Electric Meter using GSM & Arduino
+                Node MCU, ESP32 , Blynk app & Thingspeak cloud platform</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 18 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  7</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-7"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-7" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0&modestbranding=1" title="Day 7"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 8 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              8</div>
+            <div>
+              <h5 class="font-semibold">✅Day 8: Introduction to Node MCU ESP8266 and ESP32 Microcontroller and
+                Thingspeak, Blynk Cloud</h5>
+              <p class="text-slate-300 text-sm mt-1">Introduction to Node MCU ESP8266 and ESP32 Microcontroller and
+                Thingspeak, Blynk Cloud</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 22 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  8</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-8"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-8" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/3GwjfUFyY6M?rel=0&modestbranding=1" title="Day 8"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 9 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              9</div>
+            <div>
+              <h5 class="font-semibold">✅Day 9: Temperature & Humidity monitoring with blynk</h5>
+              <p class="text-slate-300 text-sm mt-1">Temperature & Humidity monitoring with blynk</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400"><span>⏱ 19 min</span><span
+                  class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day 9</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0"><a href="#v-9"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a></div>
+        </div>
+        <div id="v-9" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 9"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 10 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              10</div>
+            <div>
+              <h5 class="font-semibold">✅Day 10: Smart Home Automation using Blynk App</h5>
+              <p class="text-slate-300 text-sm mt-1">Smart Home Automation using Blynk App</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  10</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-10"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-10" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 10"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 11 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              11</div>
+            <div>
+              <h5 class="font-semibold">✅Day 11: Smart Gardening system using ESP32 Microcontroller</h5>
+              <p class="text-slate-300 text-sm mt-1">Smart Gardening system using ESP32 Microcontroller</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  11</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-11"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-11" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 11"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 12 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              12</div>
+            <div>
+              <h5 class="font-semibold">✅Day 12: Weather Monitoring system</h5>
+              <p class="text-slate-300 text-sm mt-1">Weather Monitoring system</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 18 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  12</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-12"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-12" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0&modestbranding=1" title="Day 12"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 13 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              13</div>
+            <div>
+              <h5 class="font-semibold">✅Day 13: Smart Water Quality Management System</h5>
+              <p class="text-slate-300 text-sm mt-1">Smart Water Quality Management System</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 22 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  13</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-13"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-13" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/3GwjfUFyY6M?rel=0&modestbranding=1" title="Day 13"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 14 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              14</div>
+            <div>
+              <h5 class="font-semibold">✅Day 14: Streaming with ESP32 Cam Module
+                Lora Communication</h5>
+              <p class="text-slate-300 text-sm mt-1">Streaming with ESP32 Cam Module
+                Lora Communication</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400"><span>⏱ 19 min</span><span
+                  class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day 14</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0"><a href="#v-14"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a></div>
+        </div>
+        <div id="v-14" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 14"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 15 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              15</div>
+            <div>
+              <h5 class="font-semibold">✅Day 15: Getting started with LoRa Technology</h5>
+              <p class="text-slate-300 text-sm mt-1">Getting started with LoRa Technology</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  15</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-15"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-15" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 15"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 16 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              16</div>
+            <div>
+              <h5 class="font-semibold">✅Day 16: Sending data to the cloud using Lora communication
+                RASPBERRY PI (Processor)</h5>
+              <p class="text-slate-300 text-sm mt-1">Sending data to the cloud using Lora communication
+                RASPBERRY PI (Processor).</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  16</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-16"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-16" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 16"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 17 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              17</div>
+            <div>
+              <h5 class="font-semibold">✅Day 17: Introduction to Raspberry Pi and Discuss About its Features</h5>
+              <p class="text-slate-300 text-sm mt-1">Introduction to Raspberry Pi and Discuss About its Features</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 18 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  17</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-17"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-17" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0&modestbranding=1" title="Day 17"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 18 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              18</div>
+            <div>
+              <h5 class="font-semibold">✅Day 18: Interfacing Raspberry Pi on Laptop</h5>
+              <p class="text-slate-300 text-sm mt-1">Interfacing Raspberry Pi on Laptop</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 22 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  18</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-18"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-18" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/3GwjfUFyY6M?rel=0&modestbranding=1" title="Day 18"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!--  Day 19 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              19</div>
+            <div>
+              <h5 class="font-semibold">✅Day 19: Thingspeak Communication using Raspberry Pi and sending DHT11 data to
+                Thingspeak using Raspberry Pi <br>
+                Data Analysis and Prediction</h5>
+              <p class="text-slate-300 text-sm mt-1">Thingspeak Communication using Raspberry Pi and sending DHT11 data
+                to Thingspeak using Raspberry Pi <br>
+                Data Analysis and Prediction
+              </p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400"><span>⏱ 19 min</span><span
+                  class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day 19</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0"><a href="#v-19"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a></div>
+        </div>
+        <div id="v-19" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 19"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+
+      <!--  Day 20 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              20</div>
+            <div>
+              <h5 class="font-semibold">✅Day 20: Introduction to Data analysis, Machine Learning</h5>
+              <p class="text-slate-300 text-sm mt-1">Introduction to Data analysis, Machine Learning</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400"><span>⏱ 19 min</span><span
+                  class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day 20</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0"><a href="#v-20"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a></div>
+        </div>
+        <div id="v-20" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 20"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 21 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              21</div>
+            <div>
+              <h5 class="font-semibold">✅Day 21: Introduction to Google Colab</h5>
+              <p class="text-slate-300 text-sm mt-1">Introduction to Google Colab</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  21</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-21"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-21" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 21"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 22 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              22</div>
+            <div>
+              <h5 class="font-semibold">✅Day 22: Rain prediction using Machine Learning
+                MICROSOFT AZURE</h5>
+              <p class="text-slate-300 text-sm mt-1">Rain prediction using Machine Learning
+                MICROSOFT AZURE</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 18 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  22</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-22"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-22" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0&modestbranding=1" title="Day 22"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 23 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              23</div>
+            <div>
+              <h5 class="font-semibold">✅Day 23: Introduction to Microsoft Azure</h5>
+              <p class="text-slate-300 text-sm mt-1">Introduction to Microsoft Azure</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 22 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  23</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-23"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-23" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/XIrBHuJAWSs" title="Day 23"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+
+
+      <!--  Day 24 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              24</div>
+            <div>
+              <h5 class="font-semibold">✅Day 24: Implementing IoT with Azure - (Sending Data to Azure IoT Hub using
+                ESP32)</h5>
+              <p class="text-slate-300 text-sm mt-1">Implementing IoT with Azure - (Sending Data to Azure IoT Hub using
+                ESP32)</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400"><span>⏱ 19 min</span><span
+                  class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day 24</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0"><a href="#v-24"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a></div>
+        </div>
+        <div id="v-24" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/LjXPxa1hSRM" title="Day 24"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 25 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              25</div>
+            <div>
+              <h5 class="font-semibold">✅Day 25: Visualize Real-Time Sensor Data from Azure IoT Hub using Power BI</h5>
+              <p class="text-slate-300 text-sm mt-1">Visualize Real-Time Sensor Data from Azure IoT Hub using Power BI
+              </p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  25</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-25"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-25" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 25"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+
+      <!-- Day 26 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              26</div>
+            <div>
+              <h5 class="font-semibold">✅Day 26: Smart Home Automation with Amazon Alexa
+                AWS IoT</h5>
+              <p class="text-slate-300 text-sm mt-1">Smart Home Automation with Amazon Alexa
+                AWS IoT</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  26</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-26"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-26" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 26"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 27 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              27</div>
+            <div>
+              <h5 class="font-semibold">✅Day 27: Introduction to AWS IoT and Send Data to AWS IoT Core</h5>
+              <p class="text-slate-300 text-sm mt-1">Introduction to AWS IoT and Send Data to AWS IoT Core</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 18 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  27</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-27"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-27" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0&modestbranding=1" title="Day 27"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 28 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              28</div>
+            <div>
+              <h5 class="font-semibold">✅Day 28: MQTT Arduino Sketch to AWS IoT Core for the ESP32</h5>
+              <p class="text-slate-300 text-sm mt-1">MQTT Arduino Sketch to AWS IoT Core for the ESP32</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 22 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  28</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-28"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-28" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/3GwjfUFyY6M?rel=0&modestbranding=1" title="Day 28"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 29 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              29</div>
+            <div>
+              <h5 class="font-semibold">✅Day 29: Storing Data in AWS DynamoDB from AWS IoT Control</h5>
+              <p class="text-slate-300 text-sm mt-1">Storing Data in AWS DynamoDB from AWS IoT Control</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400"><span>⏱ 19 min</span><span
+                  class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day 29</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0"><a href="#v-29"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a></div>
+        </div>
+        <div id="v-29" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 29"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 30 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              30</div>
+            <div>
+              <h5 class="font-semibold">✅Day 30: Graduation Day | Building a Weather Monitoring Station and store data
+                in AWS Cloud system</h5>
+              <p class="text-slate-300 text-sm mt-1">Graduation Day | Building a Weather Monitoring Station and store
+                data in AWS Cloud system</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  30</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-30"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-30" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 30"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+      <!-- Day 5 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              1</div>
+            <div>
+              <h5 class="font-semibold">Advanced Development — Day 5</h5>
+              <p class="text-slate-300 text-sm mt-1">Kickoff & roadmap overview.</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  1</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-1"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-1" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+
+
+
+
+      <!-- Day 5 -->
+      <article class="rounded-2xl glass glow border border-white/10 p-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="mt-1 shrink-0 h-11 w-11 rounded-xl bg-slate-800/80 border border-white/10 grid place-items-center">
+              1</div>
+            <div>
+              <h5 class="font-semibold">Advanced Development — Day 5</h5>
+              <p class="text-slate-300 text-sm mt-1">Kickoff & roadmap overview.</p>
+              <div class="flex items-center gap-3 mt-2 text-xs text-slate-400">
+                <span>⏱ 20 min</span>
+                <span class="px-2 py-0.5 rounded-full bg-slate-800/70 border border-white/10 text-slate-200">Day
+                  1</span>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#v-1"
+              class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold">Watch</a>
+          </div>
+        </div>
+        <div id="v-1" class="video-panel mt-4 rounded-xl overflow-hidden border border-white/10 bg-slate-900/80">
+          <div class="aspect-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" title="Day 1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <div class="p-4 text-sm text-slate-300 border-t border-white/10">Closed captions available on YouTube.</div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="border-t border-white/10 mt-16">
+    <div
+      class="max-w-6xl mx-auto px-4 py-10 text-sm text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© <span>2025</span> Career Development. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-white">YouTube</a>
+        <a href="#" class="hover:text-white">Twitter</a>
+        <a href="#" class="hover:text-white">Support</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
